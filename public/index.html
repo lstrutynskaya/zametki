@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    
+  <title>Zametki</title>
+</head>
+<body>
+  <div id="app">
+    <header id="header" class="clearfix">
+      <h1 id="logo" data-test="Mila">ZAMETKI</h1>
+      
+      <span class="divider"></span>
+      
+      <ul class="note-action-list list-unstyled">
+        <li class="note-action note-action-create">
+          <button>New Note</button>
+        </li>
+        <li class="note-action note-action-delete">
+          <button disabled="disabled">Delete</button>
+        </li>
+      </ul>
+    </header>
+
+    <aside id="sidebar">
+      <ul id="note-list">
+        You have no notes yet.
+      </ul>
+    </aside>
+
+    <main id="main">
+      <form>
+        <label for="title">Title</label>
+        <input type="text" id="title" class="note-title" size="100">
+        <label for="body">Body</label>
+        <textarea type="text" id="body" class="note-details"></textarea>
+      </form>
+    </main>
+  </div>
+
+  <script src="bundle.js"></script>
+</body>
+</html>
